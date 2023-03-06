@@ -1,0 +1,99 @@
+{
+    "id": "com.rohitchouhan.sap.whatsappwidget",
+    "version": "1.0.0",
+    "name": "Whatsapp Widget",
+    "description": "A SAC Custom Widget to send message to a whatsapp number from SAP Analytics Cloud",
+    "newInstancePrefix": "WhatsappWidget",
+    "vendor": "Rohit Chouhan",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https:\/\/raw.githubusercontent.com\/SAP-Custom-Widget\/WhatsappWidget\/main\/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-rohitchouhan-sap-whatsappwidget",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/WhatsappWidget\/WhatsappWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-rohitchouhan-sap-whatsappwidget-builder",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/WhatsappWidget\/WhatsappWidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "number": {
+            "description": "Phone Number (without +)",
+            "type": "integer",
+            "default": 1234567890
+        },
+        "message": {
+            "description": "Message to send",
+            "type": "string",
+            "default": "Hello from SAP"
+        },
+        "caption": {
+            "description": "Caption",
+            "type": "string",
+            "default": "Send to WhatsApp"
+        }
+    },
+    "methods": {
+        "setNumber": {
+            "description": "Set Phone Number (without +)",
+            "parameters": [
+                {
+                    "name": "number",
+                    "type": "integer",
+                    "description": "Phone Number (without +)"
+                }
+            ],
+            "body": "this.number = number;"
+        },
+        "getNumber": {
+            "returnType": "integer",
+            "description": "Return Phone Number (without +)",
+            "body": "return this.number;"
+        },
+        "setMessage": {
+            "description": "Set Message to send",
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "description": "Message to send"
+                }
+            ],
+            "body": "this.message = message;"
+        },
+        "getMessage": {
+            "returnType": "string",
+            "description": "Return Message to send",
+            "body": "return this.message;"
+        },
+        "setCaption": {
+            "description": "Set Caption",
+            "parameters": [
+                {
+                    "name": "caption",
+                    "type": "string",
+                    "description": "Caption"
+                }
+            ],
+            "body": "this.caption = caption;"
+        },
+        "getCaption": {
+            "returnType": "string",
+            "description": "Return Caption",
+            "body": "return this.caption;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
