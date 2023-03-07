@@ -12,14 +12,14 @@
         {
             "kind": "main",
             "tag": "com-rohitchouhan-sap-whatsappwidget",
-            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/WhatsappWidget\/WhatsappWidget.js",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/WhatsappWidget@1.0.0\/WhatsappWidget.js",
             "integrity": "",
             "ignoreIntegrity": true
         },
         {
             "kind": "builder",
             "tag": "com-rohitchouhan-sap-whatsappwidget-builder",
-            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/WhatsappWidget\/WhatsappWidget_Builder.js",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/WhatsappWidget@1.0.0\/WhatsappWidget_Builder.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
